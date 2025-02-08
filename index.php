@@ -123,7 +123,7 @@ include ('include/config.php');
 <div class="articles">
         <article>
             <figure>
-                <img src="assets/lavender-field.jpg" alt="Lavender Fields">
+                <img src="assets/cards-img/lavender-field.jpg" alt="Lavender Fields">
             </figure>
             <div class="article-preview">
                 <h2>Lavender Fields</h2>
@@ -135,7 +135,7 @@ include ('include/config.php');
         </article>
         <article>
             <figure>
-                <img src="assets/snow-scenery.jpg" alt="Snowy Mountains">
+                <img src="assets/cards-img/snow-scenery.jpg" alt="Snowy Mountains">
             </figure>
             <div class="article-preview">
                 <h2>Snowy Mountains</h2>
@@ -147,7 +147,7 @@ include ('include/config.php');
         </article>
         <article>
             <figure>
-                <img src="assets/wooden-bridge.jpg" alt="Wooden Bridge">
+                <img src="assets/cards-img/wooden-bridge.jpg" alt="Wooden Bridge">
             </figure>
             <div class="article-preview">
                 <h2>Wooden Bridge</h2>
@@ -159,7 +159,7 @@ include ('include/config.php');
         </article>
         <article>
             <figure>
-                <img src="assets/autumn.jpg" alt="Autumn Forest">
+                <img src="assets/cards-img/autumn.jpg" alt="Autumn Forest">
             </figure>
             <div class="article-preview">
                 <h2>Autumn Forest</h2>
@@ -171,7 +171,7 @@ include ('include/config.php');
         </article>
         <article>
             <figure>
-                <img src="assets/forest.jpg" alt="Freezing Forest">
+                <img src="assets/cards-img/forest.jpg" alt="Freezing Forest">
             </figure>
             <div class="article-preview">
                 <h2>Freezing Forest</h2>

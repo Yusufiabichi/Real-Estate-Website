@@ -123,7 +123,12 @@ include ('include/config.php');
 <div class="articles">
         <article>
             <figure>
-                <img src="assets/cards-img/lavender-field.jpg" alt="Lavender Fields">
+                <a href="">
+                    <img src="assets/cards-img/lavender-field.jpg" alt="Lavender Fields">
+                </a>
+                <!-- <div class="property-overlay">
+
+                </div> -->
             </figure>
             <div class="article-preview">
                 <h2>Lavender Fields</h2>

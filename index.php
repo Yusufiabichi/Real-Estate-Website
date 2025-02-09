@@ -119,7 +119,7 @@ include ('include/config.php');
 </div>
 <!-- Featured properties end -->
 
-
+<!-- New Featured properties -->
 <div class="articles">
         <article>
             <figure>
@@ -182,6 +182,7 @@ include ('include/config.php');
             </div>
         </article>
     </div>
+    <!-- New Featured properties end  -->
 
 
 <!-- Recent Properties start -->

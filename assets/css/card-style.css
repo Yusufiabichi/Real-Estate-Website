@@ -9,13 +9,7 @@ html {
 
 
 
-/* body {
-    font-size: 16px;
-    font-family: Poppins, sans-serif;
-    height: 100vh;
-    padding: 6rem 2rem;
-    background: var(--background);
-} */
+
 
 .articles {
     display: flex;
@@ -63,6 +57,7 @@ html {
 .article-preview {
     padding: 1.5rem;
     background: white;
+    
 }
 
 .articles figure {

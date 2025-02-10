@@ -133,8 +133,8 @@ include ('include/config.php');
             <div class="article-preview">
                 <h2>Lavender Fields</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Praesent in mauris eu tortor porttitor accumsan.
+                    1 bedroom bungalow full detache with 1 parlow and two 
+                    toilets with BQ.
                 </p>
             </div>
         </article>

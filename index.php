@@ -82,6 +82,7 @@ include ('include/config.php');
                         <a href="properties-details.php?id=<?php echo $id;?>" class="property-img">
                             <img src="admin/images/property_image/<?php echo $img;?>" alt="property-3" class="img-fluid">
                         </a>
+
                         <div class="property-overlay">
                             <a href="properties-details.php?id=<?php echo $id;?>" class="overlay-link">
                                 <i class="fa fa-link"></i>
@@ -121,24 +122,46 @@ include ('include/config.php');
 
 <!-- New Featured properties -->
 <div class="articles">
+    <a href="">
         <article>
             <figure>
-                <a href="">
-                    <img src="assets/cards-img/lavender-field.jpg" alt="Lavender Fields">
-                </a>
+                <img src="assets/cards-img/lavender-field.jpg" alt="Lavender Fields">
+                    <!-- <div class="property-overlay2">
+                    </div> -->
+                </img>
+
                 <!-- <div class="property-overlay">
-                                new overlay here
+                    <a href="properties-details.php?id=<?php echo $id;?>" class="overlay-link">
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <div class="property-magnify-gallery">
+                    <?php 
+                        $query1=mysqli_query($con,"select * from images where property_id= $id");
+                            while($row=mysqli_fetch_array($query1))
+                        {                                                    
+                        ?>
+                        <a href="admin/images/property_image/<?php echo $row['image1'];?>" class="overlay-link">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="admin/images/property_image/<?php echo  $row['image2'];?>" class="hidden"></a>
+                        <a href="admin/images/property_image/<?php echo  $row['image3'];?>" class="hidden"></a>
+                        <a href="admin/images/property_image/<?php echo $row['image4'];?>" class="hidden"></a>            
+                        <?php }?>
+                    </div>   
                 </div> -->
+
             </figure>
             <div class="article-preview">
                 <h2>Lavender Fields</h2>
+                <span>&#8358;52,000</span>
                 <p>
                     1 bedroom bungalow full detache with 1 parlow and two 
                     toilets with BQ.
                 </p>
             </div>
         </article>
-    </div>
+    </a>
+</div>
     <!-- New Featured properties end  -->
 
 

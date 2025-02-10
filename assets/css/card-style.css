@@ -44,14 +44,30 @@ html {
     aspect-ratio: 16 / 9;
     overflow: hidden;
     object-fit: cover;
+    position: relative;
 }
 
+.property-overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    content: "";
+    z-index: 9;
+    /* background: linear-gradient(to top,rgba(35,35,37,0.9) 0%,rgba(35,35,37,0.45) 5%,rgba(22,22,23,0) 15%,rgba(0,0,0,0) 100%); */
+    border-radius: 4px 4px 0 0;
+    border: 1px solid red;
+    opacity: 1;
+}
 .articles article:hover img {
     transform: scale(1.5);
 }
 
 .article-preview {
-    padding: 1.5rem;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
     background: white;
     
 }

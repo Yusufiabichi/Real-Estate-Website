@@ -138,54 +138,6 @@ include ('include/config.php');
                 </p>
             </div>
         </article>
-        <article>
-            <figure>
-                <img src="assets/cards-img/snow-scenery.jpg" alt="Snowy Mountains">
-            </figure>
-            <div class="article-preview">
-                <h2>Snowy Mountains</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Praesent in mauris eu tortor porttitor accumsan.
-                </p>
-            </div>
-        </article>
-        <article>
-            <figure>
-                <img src="assets/cards-img/wooden-bridge.jpg" alt="Wooden Bridge">
-            </figure>
-            <div class="article-preview">
-                <h2>Wooden Bridge</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Praesent in mauris eu tortor porttitor accumsan.
-                </p>
-            </div>
-        </article>
-        <article>
-            <figure>
-                <img src="assets/cards-img/autumn.jpg" alt="Autumn Forest">
-            </figure>
-            <div class="article-preview">
-                <h2>Autumn Forest</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor
-                    accumsan.
-                </p>
-            </div>
-        </article>
-        <article>
-            <figure>
-                <img src="assets/cards-img/forest.jpg" alt="Freezing Forest">
-            </figure>
-            <div class="article-preview">
-                <h2>Freezing Forest</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor
-                    accumsan.
-                </p>
-            </div>
-        </article>
     </div>
     <!-- New Featured properties end  -->
 

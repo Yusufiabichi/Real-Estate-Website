@@ -127,7 +127,7 @@ include ('include/config.php');
                     <img src="assets/cards-img/lavender-field.jpg" alt="Lavender Fields">
                 </a>
                 <!-- <div class="property-overlay">
-
+                                new overlay here
                 </div> -->
             </figure>
             <div class="article-preview">

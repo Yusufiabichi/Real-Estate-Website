@@ -83,7 +83,7 @@ include ('include/config.php');
                 <div class="articles">
                     <article>
                         <div class="card-img">
-                            <img src="assets/property-2.jpg" alt="Lavender Fields">
+                            <img src="admin/images/property_image/<?php echo $img;?>" alt="Lavender Fields">
                             <div class="overlay">
                                 <div class="overlay-content">
                                     <h3 class="animated-text">Click to view Image</h3>

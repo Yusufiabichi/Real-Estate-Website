@@ -78,6 +78,36 @@ include ('include/config.php');
 
 
                 <!-- New Featured properties -->
+
+
+                <div class="articles">
+                    <article>
+                        <div class="card-img">
+                            <img src="assets/property-2.jpg" alt="Lavender Fields">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3 class="animated-text">Click to view Image</h3>
+                                    <p class="animated-text">Call Us</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-preview">
+                            <h2>2 Bedroom Duplex</h2>
+                            <p class="price">&#8358;52,000</p>
+                            <p class="card-desc">
+                                2 bedroom duplex house, 1 parlour with two toilets and BQ.
+                                2 bedroom duplex house, 1 parlour with two toilets and BQ.
+
+                            </p>
+                            <div class="card-btn">
+                                <button>More Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+
+
                 <!-- <div class="articles">
                     <article>
                         <figure>

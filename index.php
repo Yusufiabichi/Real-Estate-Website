@@ -78,7 +78,7 @@ include ('include/config.php');
 
 
                 <!-- New Featured properties -->
-                <div class="articles">
+                <!-- <div class="articles">
                     <article>
                         <figure>
                             <a href="properties-details.php?id=<?php echo $id;?>" class="property-img">
@@ -117,7 +117,7 @@ include ('include/config.php');
                             </div>
                         </div>
                     </article>
-                </div>
+                </div> -->
                     <!-- New Featured properties end  -->
 
 

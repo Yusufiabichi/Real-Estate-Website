@@ -1526,12 +1526,12 @@ a {
     opacity: 1;
 } */
 
-.property-overlay {
+/* .property-overlay {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .overlay-link {
     color: #fff;

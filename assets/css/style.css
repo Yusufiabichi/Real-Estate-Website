@@ -1547,22 +1547,22 @@ a {
     display: none;
 } */
 
-.overlay-link:not([href]):not([tabindex]),
+/* .overlay-link:not([href]):not([tabindex]),
 .overlay-link:not([href]):not([tabindex]):hover {
     color: #fff;
-}
+} */
 
-.overlay-link:hover {
+/* .overlay-link:hover {
     color: #fff;
-}
+} */
 
-.property-thumbnail:hover .property-overlay {
+/* .property-thumbnail:hover .property-overlay {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .property-thumbnail:hover .overlay-link {
     display: inline-block;
-}
+} */
 
 .videoWrapper {
     position: relative;

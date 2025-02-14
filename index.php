@@ -88,7 +88,7 @@ include ('include/config.php');
                                 <div class="overlay-content">
                                     <h3 class="animated-text">Click to view Image</h3>
                                     <a href="admin/images/property_image/<?php //echo $row['image1'];?>" class="overlay-link">
-                                        <i class="fa fa-expand"></i>
+                                        <i class="fa fa-expand overlay-link"></i>
                                     </a>
                                 </div>
                             </div>

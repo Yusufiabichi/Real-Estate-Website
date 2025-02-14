@@ -1533,7 +1533,7 @@ a {
     align-items: center;
 } */
 
-.overlay-link {
+/* .overlay-link {
     color: #fff;
     border: 2px solid #FFF;
     border-radius: 50%;
@@ -1545,7 +1545,7 @@ a {
     margin: 3px;
     cursor: pointer;
     display: none;
-}
+} */
 
 .overlay-link:not([href]):not([tabindex]),
 .overlay-link:not([href]):not([tabindex]):hover {

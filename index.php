@@ -104,9 +104,10 @@ include ('include/config.php');
                         </div>
                     </article>
                 </div>
-                    <!-- New Featured properties end  -->
+                <!-- New Featured properties end  -->
 
             </div>
+
             <?php }?> 
         </div>
     </div>

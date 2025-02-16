@@ -67,6 +67,8 @@ html {
     position: relative;
     animation: fadeInUp 1s ease forwards;
     opacity: 0;
+    color: #fff !important;
+    font-size: 15px !important;
 }
 @keyframes fadeInUp {
     from {
@@ -104,6 +106,12 @@ html {
 }
 .articles article:hover .overlay {
     opacity: 1;
+}
+.overlay-link {
+    color: #fff;
+    border-radius: 50%;
+    /* border: 2px solid #fff; */
+    /* padding: 5px; */
 }
 
 .article-preview {

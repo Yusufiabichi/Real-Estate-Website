@@ -107,46 +107,6 @@ include ('include/config.php');
                 </div>
                     <!-- New Featured properties end  -->
 
-
-
-                <div class="card property-box-2">
-                
-                    <!-- property img -->
-                    <div class="property-thumbnail">
-                        <a href="properties-details.php?id=<?php echo $id;?>" class="property-img">
-                            <img src="admin/images/property_image/<?php echo $img;?>" alt="property-3" class="img-fluid">
-                        </a>
-
-                        <div class="property-overlay">
-                            <a href="properties-details.php?id=<?php echo $id;?>" class="overlay-link">
-                                <i class="fa fa-link"></i>
-                            </a>
-                            <div class="property-magnify-gallery">
-                            <?php 
-                                $query1=mysqli_query($con,"select * from images where property_id= $id");
-                                 while($row=mysqli_fetch_array($query1))
-                              {                                                    
-                                ?>
-                                <a href="admin/images/property_image/<?php echo $row['image1'];?>" class="overlay-link">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="admin/images/property_image/<?php echo  $row['image2'];?>" class="hidden"></a>
-                                <a href="admin/images/property_image/<?php echo  $row['image3'];?>" class="hidden"></a>
-                                <a href="admin/images/property_image/<?php echo $row['image4'];?>" class="hidden"></a>            
-                                <?php }?>
-                            </div>   
-                        </div>
-                    </div>
-                    <!-- detail -->
-                    <div class="detail">
-                        <h5 class="title"><a href="properties-details.php?id=<?php echo $id;?>"><?php echo $res['title'];?></a></h5>
-                        <h4 class="price">
-                            <?php echo $res['price']?>
-                        </h4>
-                        <p><?php echo $res['description'] ?></p>
-                        </div>
-                        
-                </div>
             </div>
             <?php }?> 
         </div>

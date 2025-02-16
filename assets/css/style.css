@@ -7302,6 +7302,8 @@ body.off-canvas-sidebar-open {
 
     .content-area-19{
         padding: 80px 0 50px;
+        display: flex;
+        align-items: center;
     }
 
     .content-area-20 {

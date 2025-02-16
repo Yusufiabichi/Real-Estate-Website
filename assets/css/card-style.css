@@ -21,7 +21,7 @@ html {
     margin: 0 auto;
     justify-content: center;
     max-width: 1200px;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
 }
 
 .articles article {
@@ -42,6 +42,10 @@ html {
     margin: 7px;
     border-radius: .5rem .5rem 0 0;
     display: block;
+}
+.articles article .card-img img {
+    margin-right: 10px;
+    /* position: absolute; */
 }
 .overlay {
     position: absolute;
@@ -109,11 +113,20 @@ html {
 }
 .overlay-link {
     color: #fff;
+    border: 2px solid #FFF;
     border-radius: 50%;
-    /* border: 2px solid #fff; */
-    /* padding: 5px; */
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    text-align: center;
+    margin: 3px;
+    cursor: pointer;
 }
-
+/* .overlay-link:not([href]):not([tabindex]),
+.overlay-link:not([href]):not([tabindex]):hover {
+    color: #fff;
+} */
 .article-preview {
     padding: .5rem 1.5rem 1.5rem 1.5rem;
     background: white;

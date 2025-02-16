@@ -81,11 +81,11 @@ include ('include/config.php');
                 <div class="articles">
                     <article>
                         <div class="card-img">
-                            <img src="admin/images/property_image/<?php echo $img;?>" alt="Lavender Fields">
+                            <img src="admin/images/property_image/<?php echo $img;?>" alt="Lavender Fields" class="img-fluid">
                             <div class="overlay">
                                 <div class="overlay-content">
                                     <h3 class="animated-text">Click to view Image</h3>
-                                    <a href="admin/images/property_image/<?php //echo $row['image1'];?>" class="overlay-link">
+                                    <a href="admin/images/property_image/<?php echo $row['image1'];?>" >
                                         <i class="fa fa-expand overlay-link"></i>
                                     </a>
                                 </div>
@@ -95,7 +95,6 @@ include ('include/config.php');
                             <h2>2 Bedroom Duplex</h2>
                             <p class="price">&#8358;52,000</p>
                             <p class="card-desc">
-                                2 bedroom duplex house, 1 parlour with two toilets and BQ.
                                 2 bedroom duplex house, 1 parlour with two toilets and BQ.
                 
                             </p>

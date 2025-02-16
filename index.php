@@ -74,12 +74,7 @@ include ('include/config.php');
                             $id=$res['id'];
                             $img=$res['image'];
                    ?>
-            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
-
-
                 <!-- New Featured properties -->
-
-
                 <div class="articles">
                     <article>
                         <div class="card-img">
@@ -107,6 +102,9 @@ include ('include/config.php');
                         </div>
                     </article>
                 </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
+
 
 
 

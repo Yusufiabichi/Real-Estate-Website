@@ -74,6 +74,9 @@ include ('include/config.php');
                             $id=$res['id'];
                             $img=$res['image'];
                    ?>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
+    
                 <!-- New Featured properties -->
                 <div class="articles">
                     <article>
@@ -82,7 +85,7 @@ include ('include/config.php');
                             <div class="overlay">
                                 <div class="overlay-content">
                                     <h3 class="animated-text">Click to view Image</h3>
-                                    <a href="admin/images/property_image/<?php //echo $row['image1'];?>" class="overlay-link">
+                                    <a href="admin/images/property_image/<?php echo $row['image1'];?>" class="overlay-link">
                                         <i class="fa fa-expand overlay-link"></i>
                                     </a>
                                 </div>
@@ -94,7 +97,7 @@ include ('include/config.php');
                             <p class="card-desc">
                                 2 bedroom duplex house, 1 parlour with two toilets and BQ.
                                 2 bedroom duplex house, 1 parlour with two toilets and BQ.
-
+                
                             </p>
                             <div class="card-btn">
                                 <button>More Details</button>
@@ -102,52 +105,6 @@ include ('include/config.php');
                         </div>
                     </article>
                 </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
-
-
-
-
-                <!-- <div class="articles">
-                    <article>
-                        <figure>
-                            <a href="properties-details.php?id=<?php echo $id;?>" class="property-img">
-                                <img src="admin/images/property_image/<?php echo $img;?>" alt="property-3" class="img-fluid">
-                            </a>
-                        </figure>
-                        <div class="article-preview">
-                            <h2><?php echo $res['title']?></h2>
-                            <span>&#8358;<?php echo $res['price']?></span>
-                            <p>
-                                
-                            <?php echo $res['description']?>
-                                
-                            </p>
-                            <div class="card-links">
-                                <a href="properties-details.php?id=<?php echo $id;?>" class="card-link">
-                                    <i class="fa fa-link"></i>
-                                </a>
-
-                                <div class="property-magnify-gallery">
-                                    <?php 
-                                        $query1=mysqli_query($con,"select * from images where property_id= $id");
-                                        while($row=mysqli_fetch_array($query1))
-                                        {                                                    
-                                    ?>
-                                    <a href="admin/images/property_image/<?php echo $row['image1'];?>" class="overlay-link">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                    <a href="admin/images/property_image/<?php echo  $row['image2'];?>" class="hidden"></a>
-                                    <a href="admin/images/property_image/<?php echo  $row['image3'];?>" class="hidden"></a>
-                                    <a href="admin/images/property_image/<?php echo $row['image4'];?>" class="hidden"></a>            
-                                    <?php }?>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </article>
-                </div> -->
                     <!-- New Featured properties end  -->
 
 

@@ -85,21 +85,36 @@ include ('include/config.php');
                             <div class="overlay">
                                 <div class="overlay-content">
                                     <h3 class="animated-text">Click to view Image</h3>
-                                    <a href="admin/images/property_image/<?php echo $row['image1'];?>" >
-                                        <i class="fa fa-expand overlay-link"></i>
-                                    </a>
+                                    
+                                    <div class="property-magnify-gallery">
+                                        <?php 
+                                            $query1=mysqli_query($con,"select * from images where property_id= $id");
+                                            while($row=mysqli_fetch_array($query1))
+                                        {                                                    
+                                            ?>
+                                        <a href="admin/images/property_image/<?php echo $row['image1'];?>" class="">
+                                            <i class="fa fa-expand overlay-link"></i>
+                                        </a>
+                                        <a href="admin/images/property_image/<?php echo  $row['image2'];?>" class="hidden"></a>
+                                        <a href="admin/images/property_image/<?php echo  $row['image3'];?>" class="hidden"></a>
+                                        <a href="admin/images/property_image/<?php echo $row['image4'];?>" class="hidden"></a>            
+                                        <?php }?>
+                                    </div>  
+
                                 </div>
                             </div>
                         </div>
                         <div class="article-preview">
-                            <h2>2 Bedroom Duplex</h2>
-                            <p class="price">&#8358;52,000</p>
+                            <h2><?php echo $res['title'];?></h2>
+                            <p class="price">&#8358;<?php echo $res['price']?></p>
                             <p class="card-desc">
-                                2 bedroom duplex house, 1 parlour with two toilets and BQ.
+                            <?php //echo $res['description'] ?>
                 
                             </p>
                             <div class="card-btn">
-                                <button>More Details</button>
+                                <a href="properties-details.php?id=<?php echo $id;?>">
+                                    <button>More Details</button>
+                                </a>
                             </div>
                         </div>
                     </article>

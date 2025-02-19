@@ -105,7 +105,7 @@ include ('include/config.php');
                             </div>
                         </div>
                         <div class="article-preview">
-                            <h2><?php echo $res['title'];?></h2>
+                            <h2><?php //echo $res['title'];?></h2>
                             <p class="price">&#8358;<?php echo $res['price']?></p>
                             <p class="card-desc">
                             <?php //echo $res['description'] ?>

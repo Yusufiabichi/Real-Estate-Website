@@ -7,25 +7,45 @@ if(isset($submit))
 
 $file=$_FILES['file']['name'];
   
-  $query="insert into property values('','$title','$bedroom','$hall','$kitchan','$bathroom','$parking_space','$price','$add','$file','$description','$property_type','$sold','$land_area',now())";  
-  $r=mysqli_query($con,$query);
-  move_uploaded_file($_FILES['file']['tmp_name'],"images/property_image/".$_FILES['file']['name']); 
+  //$query="insert into property values('','$title','$bedroom','$hall','$kitchan','$bathroom','$parking_space','$price','$add','$file','$description','$property_type','$sold','$land_area',now())";  
+  //$r=mysqli_query($con,$query);
+  //move_uploaded_file($_FILES['file']['tmp_name'],"images/property_image/".$_FILES['file']['name']); 
 
-if($r)
-{
-  $msg='<div class="alert alert-success alert-dismissible">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Success!</strong> Property Data Add successful.
-  </div>';    
-}
-else
-{
-$msg='<div class="alert alert-danger alert-dismissible">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Success!</strong> Property Data  Not Added.'.mysqli_error($con).
-  '</div>';
+  $query = "INSERT INTO property 
+        (title, bedroom, hall, kichan, bathroom, parking_space, price, address, image, description, property_type, sold, land_area, created_at) 
+        VALUES 
+        ('$title', '$bedroom', '$hall', '$kitchan', '$bathroom', '$parking_space', '$price', '$add', '$file', '$description', '$property_type', '$sold', '$land_area', NOW())";
 
-}        
+    $r = mysqli_query($con, $query);
+
+    if($r) {
+        move_uploaded_file($_FILES['file']['tmp_name'], "images/property_image/" . $_FILES['file']['name']);
+        $msg = '<div class="alert alert-success alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Success!</strong> Property Data Added Successfully.
+        </div>';    
+    } else {
+        $msg = '<div class="alert alert-danger alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Error!</strong> Property Data Not Added. ' . mysqli_error($con) . '
+        </div>';
+    }
+
+// if($r)
+// {
+//   $msg='<div class="alert alert-success alert-dismissible">
+//     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+//     <strong>Success!</strong> Property Data Add successful.
+//   </div>';    
+// }
+// else
+// {
+// $msg='<div class="alert alert-danger alert-dismissible">
+//     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+//     <strong>Success!</strong> Property Data  Not Added.'.mysqli_error($con).
+//   '</div>';
+
+// }        
 }
 
 ?>  
@@ -146,7 +166,7 @@ $msg='<div class="alert alert-danger alert-dismissible">
                                     <div class="col-lg-6 col-md-3 col-sm-3 col-xs-6">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input required type="number" name="kitchan" class="form-control">
+                                                <input required type="number" name="kichan" class="form-control">
                                                 <label class="form-label">Kitchen</label>
                                             </div>
                                         </div>

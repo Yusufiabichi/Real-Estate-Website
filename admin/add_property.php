@@ -12,9 +12,10 @@ $file=$_FILES['file']['name'];
   //move_uploaded_file($_FILES['file']['tmp_name'],"images/property_image/".$_FILES['file']['name']); 
 
   $query = "INSERT INTO property 
-        (title, bedroom, hall, kichan, bathroom, parking_space, price, address, image, description, property_type, sold, land_area, created_at) 
+        (title, bedroom, hall, kichan, bathroom, parking_space, price, address, image, description, property_type, sold, land_area, date, created_at) 
         VALUES 
-        ('$title', '$bedroom', '$hall', '$kitchan', '$bathroom', '$parking_space', '$price', '$add', '$file', '$description', '$property_type', '$sold', '$land_area', NOW())";
+        ('$title', '$bedroom', '$hall', '$kichan', '$bathroom', '$parking_space', '$price', '$add', '$file', '$description', '$property_type', '$sold', '$land_area', CURDATE(), NOW())";
+
 
     $r = mysqli_query($con, $query);
 
@@ -166,7 +167,7 @@ $file=$_FILES['file']['name'];
                                     <div class="col-lg-6 col-md-3 col-sm-3 col-xs-6">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input required type="number" name="kichan" class="form-control">
+                                                <input required type="number" name="kichan" class="form-control" min="0" value="0">
                                                 <label class="form-label">Kitchen</label>
                                             </div>
                                         </div>

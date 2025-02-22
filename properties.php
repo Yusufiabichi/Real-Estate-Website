@@ -166,7 +166,7 @@ if(isset($_GET['errormessage']) AND isset($_GET['successmessage'])){
                     </div>
                     <div class="footer">
                         <a href="#" data-toggle="modal" data='' data-target="#contactproperty" data-whatever="contactproperty">
-                            <i class="fa fa-envelope"></i>Have interest contact us  
+                            <i class="fa fa-envelope"></i>Have interest? contact us  
                         </a>
                     </div>
                 </div>

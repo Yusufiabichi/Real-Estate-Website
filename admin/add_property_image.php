@@ -1,26 +1,63 @@
 <?php 
+
 include('include/header.php');
-extract($_REQUEST);
-include'include/config.php';
-if(isset($submit))
-{
+include('include/config.php');
 
-  $file=$_FILES['file']['name'];
-  $file1=$_FILES['file1']['name'];
-  $file2=$_FILES['file2']['name'];
-  $file3=$_FILES['file3']['name'];
-  
-  $query="insert into images values('','$file','$file1','$file2','$file3','$property_id')";  
-  mysqli_query($con,$query);
-  move_uploaded_file($_FILES['file']['tmp_name'],"images/property_image/".$_FILES['file']['name']); 
-  move_uploaded_file($_FILES['file1']['tmp_name'],"images/property_image/".$_FILES['file1']['name']); 
-  move_uploaded_file($_FILES['file2']['tmp_name'],"images/property_image/".$_FILES['file2']['name']); 
-  move_uploaded_file($_FILES['file3']['tmp_name'],"images/property_image/".$_FILES['file3']['name']); 
+if(isset($_POST['submit'])) {
 
-   $msg='<div class="alert alert-success alert-dismissible">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Success!</strong> Image Upload  successfuly.
-  </div>';       
+    // Ensure property ID is selected
+    if(!isset($_POST['property_id']) || empty($_POST['property_id'])) {
+        $msg = '<div class="alert alert-danger">Error: Property ID is required.</div>';
+    } else {
+        $property_id = mysqli_real_escape_string($con, $_POST['property_id']);
+
+        // Upload directory
+        $targetDir = "images/property_image/";
+
+        // Validate and store uploaded images
+        $image1 = isset($_FILES['image1']['name']) ? $_FILES['image1']['name'] : '';
+        $image2 = isset($_FILES['image2']['name']) ? $_FILES['image2']['name'] : '';
+        $image3 = isset($_FILES['image3']['name']) ? $_FILES['image3']['name'] : '';
+        $image4 = isset($_FILES['image4']['name']) ? $_FILES['image4']['name'] : '';
+
+        $targetFile1 = $targetDir . basename($image1);
+        $targetFile2 = $targetDir . basename($image2);
+        $targetFile3 = $targetDir . basename($image3);
+        $targetFile4 = $targetDir . basename($image4);
+
+        // Move uploaded files to target directory
+        $uploadSuccess = true;
+
+        if(!empty($image1) && !move_uploaded_file($_FILES['image1']['tmp_name'], $targetFile1)) {
+            $uploadSuccess = false;
+        }
+        if(!empty($image2) && !move_uploaded_file($_FILES['image2']['tmp_name'], $targetFile2)) {
+            $uploadSuccess = false;
+        }
+        if(!empty($image3) && !move_uploaded_file($_FILES['image3']['tmp_name'], $targetFile3)) {
+            $uploadSuccess = false;
+        }
+        if(!empty($image4) && !move_uploaded_file($_FILES['image4']['tmp_name'], $targetFile4)) {
+            $uploadSuccess = false;
+        }
+
+        if ($uploadSuccess) {
+            // Insert images into the database
+            $query = "INSERT INTO images (image1, image2, image3, image4, property_id) 
+                      VALUES ('$image1', '$image2', '$image3', '$image4', '$property_id')";
+            
+            if(mysqli_query($con, $query)) {
+                $msg = '<div class="alert alert-success alert-dismissible">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>Success!</strong> Images uploaded successfully.
+                        </div>';
+            } else {
+                $msg = '<div class="alert alert-danger">Error: Could not insert images into the database.</div>';
+            }
+        } else {
+            $msg = '<div class="alert alert-danger">Error: File upload failed.</div>';
+        }
+    }
 }
 
 ?>  
@@ -75,7 +112,7 @@ if(isset($submit))
                                     
                                 </div>
                                 <div>
-                                    <input required name="file" type="file" multiple />
+                                    <input required name="image1" type="file" multiple />
                                 </div>
                              
                              </div>
@@ -89,7 +126,7 @@ if(isset($submit))
                                     
                                 </div>
                                 <div>
-                                    <input required name="file1" type="file" multiple />
+                                    <input required name="image2" type="file" multiple />
                                 </div>
                              
                              </div>
@@ -102,7 +139,7 @@ if(isset($submit))
                                     
                                 </div>
                                 <div>
-                                    <input required name="file2" type="file" multiple />
+                                    <input required name="image3" type="file" multiple />
                                 </div>
                              
                              </div>
@@ -116,7 +153,7 @@ if(isset($submit))
                                     
                                 </div>
                                 <div>
-                                    <input required name="file3" type="file" multiple />
+                                    <input required name="image4" type="file" multiple />
                                 </div>
                              
                              </div>

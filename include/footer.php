@@ -42,7 +42,7 @@
                                 <a href="properties-details.php?id=<?php echo $id;?>"><?php echo $res['title'];?></a>
                             </h5>
                              <p><?php echo $res['address'];?></p>
-                            <p> <strong>N<?php echo $res['price'];?></strong></p>
+                            <p> <strong>&#8358;<?php echo $res['price'];?></strong></p>
                         </div>
                     </div>
                     <?php 

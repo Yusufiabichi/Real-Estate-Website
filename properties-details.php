@@ -111,36 +111,51 @@ $sold=$res['sold'];
 
                         <?php
 
-                            $query=mysqli_query($con,"select * from images where property_id='$id'");
-                            $res=mysqli_fetch_array($query);
-                                                
-                            $img1=$res['image1'];
-                            $img2=$res['image2'];
-                            $img3=$res['image3'];
-                            $img4=$res['image4'];
 
-                            if (isset($property['key'])) {
-                                echo $property['key'];
-                            } else {
-                                echo "Value not found";
+                            $query = mysqli_query($con, "SELECT * FROM images WHERE property_id='$id'");
+
+                            if (!$query) {
+                                die("Database query failed: " . mysqli_error($con)); // Debugging error
                             }
+
+                            $res = mysqli_fetch_array($query);
+
+                            if ($res) {
+                                // Check if each image exists, otherwise set a default message
+                                $img1 = !empty($res['image1']) ? $res['image1'] : "Image not found";
+                                $img2 = !empty($res['image2']) ? $res['image2'] : "Image not found";
+                                $img3 = !empty($res['image3']) ? $res['image3'] : "Image not found";
+                                $img4 = !empty($res['image4']) ? $res['image4'] : "Image not found";
+                            } else {
+                                // If no images were found, set all to "Image not found"
+                                $img1 = $img2 = $img3 = $img4 = "Image not found";
+                            }
+
+                            // Debugging: Print values (optional, remove after testing)
+                            // echo "Img1: $img1 <br>";
+                            // echo "Img2: $img2 <br>";
+                            // echo "Img3: $img3 <br>";
+                            // echo "Img4: $img4 <br>";
+
+
+                            
                         ?>
 
 
                         <div class="active item carousel-item" data-slide-number="0">
-                            <img src="admin/images/property_image/<?php echo $img;?>" class="img-fluid" alt="property-4">
+                            <img src="admin/images/property_image/<?php echo $img;?>" class="img-fluid" alt="Image 1">
                         </div>
                         <div class="item carousel-item" data-slide-number="1">
-                            <img src="admin/images/property_image/<?php echo $img1;?>" class="img-fluid" alt="property-6">
+                            <img src="admin/images/property_image/<?php echo $img1;?>" class="img-fluid" alt="Image 2">
                         </div>
                         <div class="item carousel-item" data-slide-number="2">
-                            <img src="admin/images/property_image/<?php echo $img2;?>" class="img-fluid" alt="property-1">
+                            <img src="admin/images/property_image/<?php echo $img2;?>" class="img-fluid" alt="Image 3">
                         </div>
                         <div class="item carousel-item" data-slide-number="4">
-                            <img src="admin/images/property_image/<?php echo $img3;?>" class="img-fluid" alt="property-5">
+                            <img src="admin/images/property_image/<?php echo $img3;?>" class="img-fluid" alt="Image 4">
                         </div>
                         <div class="item carousel-item" data-slide-number="5">
-                            <img src="admin/images/property_image/<?php echo $img4;?>" class="img-fluid" alt="property-8">
+                            <img src="admin/images/property_image/<?php echo $img4;?>" class="img-fluid" alt="Image 5">
                         </div>
                         <a class="carousel-control left" href="#propertiesDetailsSlider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
                         <a class="carousel-control right" href="#propertiesDetailsSlider" data-slide="next"><i class="fa fa-angle-right"></i></a>
@@ -150,27 +165,27 @@ $sold=$res['sold'];
                     <ul class="carousel-indicators smail-properties list-inline nav nav-justified">
                         <li class="list-inline-item active">
                             <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#propertiesDetailsSlider">
-                                <img src="admin/images/property_image/<?php echo $img;?>" class="img-fluid" alt="property-4">
+                                <img src="admin/images/property_image/<?php echo $img;?>" class="img-fluid" alt="Image 1">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a id="carousel-selector-1" data-slide-to="1" data-target="#propertiesDetailsSlider">
-                                <img src="admin/images/property_image/<?php echo $img1;?>" class="img-fluid" alt="property-6">
+                                <img src="admin/images/property_image/<?php echo $img1;?>" class="img-fluid" alt="Image 2">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a id="carousel-selector-2" data-slide-to="2" data-target="#propertiesDetailsSlider">
-                                <img src="admin/images/property_image/<?php echo $img2;?>" class="img-fluid" alt="property-1">
+                                <img src="admin/images/property_image/<?php echo $img2;?>" class="img-fluid" alt="Image 3">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a id="carousel-selector-3" data-slide-to="3" data-target="#propertiesDetailsSlider">
-                                <img src="admin/images/property_image/<?php echo $img3;?>" class="img-fluid" alt="property-5">
+                                <img src="admin/images/property_image/<?php echo $img3;?>" class="img-fluid" alt="Image 4">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a id="carousel-selector-4" data-slide-to="4" data-target="#propertiesDetailsSlider">
-                                <img src="admin/images/property_image/<?php echo $img4;?>" class="img-fluid" alt="property-8">
+                                <img src="admin/images/property_image/<?php echo $img4;?>" class="img-fluid" alt="Image 5">
                             </a>
                         </li>
                     </ul>

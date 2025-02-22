@@ -67,6 +67,10 @@ html {
 .overlay-content p {
     animation-delay: .5s;
 }
+.border-up {
+    border-top: 1px solid #fff;
+    width: 100%;
+}
 .animated-text {
     position: relative;
     animation: fadeInUp 1s ease forwards;

@@ -80,8 +80,8 @@
         <div class="row mx-0">
             <div class="col-xl-12">
                 <p class="copy">
-                <a href="https://www.facebook.com/itechservicesconsultancy" target="_blank">Developed and design by  I-tech Service</a>
-                <a href="tel:+2348038751819">+2348108101246</a><br>
+                <a href="https://yusufia-portfolio.vercel.app/" target="_blank">Developed by  Yusufia Bichi</a>
+                <a href="tel:+2347068538000">+2348108101246</a><br>
                 &copy; <?php echo date("Y");?>Cyclosis Real Estate Management Agent
                 </p>
             </div>

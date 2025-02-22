@@ -114,7 +114,7 @@ include ('include/config.php');
                                     echo (strlen($desc) > 60) ? substr($desc, 0, 50) . "..." : $desc;
                                 ?>
                             </p>
-                            <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i><?php echo $res['address'];?>                      </a>
+                            <i class="flaticon-facebook-placeholder-for-locate-places-on-maps border-up"></i><?php echo $res['address'];?>                      </a>
                             <div class="card-btn">
                                 <a href="properties-details.php?id=<?php echo $id;?>">
                                     <button>More Details</button>

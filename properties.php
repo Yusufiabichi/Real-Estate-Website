@@ -104,12 +104,12 @@ if(isset($_GET['errormessage']) AND isset($_GET['successmessage'])){
         <?php 
         include'include/config.php';
 
-$query=mysqli_query($con,"select * from property");
-while($res=mysqli_fetch_array($query))
-{
-$id=$res['id'];
-$img=$res['image'];
-$propertyaddress = $res['address'];
+            $query=mysqli_query($con,"select * from property");
+            while($res=mysqli_fetch_array($query))
+            {
+            $id=$res['id'];
+            $img=$res['image'];
+            $propertyaddress = $res['address'];
 
         ?>    
             <div class="col-lg-4 col-md-6 col-sm-12">

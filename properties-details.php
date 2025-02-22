@@ -111,13 +111,19 @@ $sold=$res['sold'];
 
                         <?php
 
-$query=mysqli_query($con,"select * from images where property_id='$id'");
-$res=mysqli_fetch_array($query);
-                    
-$img1=$res['image1'];
-$img2=$res['image2'];
-$img3=$res['image3'];
-$img4=$res['image4'];
+                            $query=mysqli_query($con,"select * from images where property_id='$id'");
+                            $res=mysqli_fetch_array($query);
+                                                
+                            $img1=$res['image1'];
+                            $img2=$res['image2'];
+                            $img3=$res['image3'];
+                            $img4=$res['image4'];
+
+                            if (isset($property['key'])) {
+                                echo $property['key'];
+                            } else {
+                                echo "Value not found";
+                            }
                         ?>
 
 

@@ -1,6 +1,7 @@
 
 <?php include('include/header.php');
 include ('include/config.php');
+// include ('include/whatsapp.php')
 ?>
 <!-- main header end -->
 
@@ -108,9 +109,12 @@ include ('include/config.php');
                             <h2><?php echo $res['title'];?></h2>
                             <p class="price">&#8358;<?php echo $res['price']?></p>
                             <p class="card-desc">
-                            <?php echo $res['description'] ?>
-                
+                                <?php 
+                                    $desc = $res['description']; 
+                                    echo (strlen($desc) > 60) ? substr($desc, 0, 50) . "..." : $desc;
+                                ?>
                             </p>
+                            <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i><?php echo $res['address'];?>                      </a>
                             <div class="card-btn">
                                 <a href="properties-details.php?id=<?php echo $id;?>">
                                     <button>More Details</button>
@@ -128,8 +132,6 @@ include ('include/config.php');
     </div>
 </div>
 <!-- Featured properties end -->
-
-
 
 <!-- Recent Properties start -->
 <div class="recent-properties content-area-2" id="recentproperties">
@@ -177,6 +179,21 @@ include ('include/config.php');
     </div>
 </div>
 <!-- Recent Properties end -->
+
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+234XXXXXXXXXX", // Your WhatsApp number
+            call_to_action: "Chat with us!", // Call to action
+            position: "left", // Position of the button
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+
 
 
 <!-- Footer start -->

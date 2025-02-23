@@ -154,6 +154,7 @@ include ('include/config.php');
                         <img src="admin/images/property_image/<?php echo $res['image'];?>" alt="property-6" class="img-fluid">
                         <div class="date-box">For Sale</div>
                     </div>
+
                     <div class="detail">
                         <div class="heading">
                             <h3>
@@ -172,6 +173,8 @@ include ('include/config.php');
                             <span><?php echo $res['land_area'];?>sqft</span>
                         </div>
                     </div>
+
+                    
                 </div>
             </div>
             <?php }?> 

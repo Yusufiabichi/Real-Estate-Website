@@ -158,11 +158,10 @@ include ('include/config.php');
                         <div class="detail">
                             <div class="heading">
                                 <h3>
-                                    <a href="properties-details.php?id=<?php echo $res['id'];?>"><?php echo $res['title'];?></a>
+                                    <?php echo $res['title'];?>
                                 </h3>
                                 <div class="location">
                                     <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i><?php echo $res['address'];?>                      </a>
-                                    </a>
                                 </div>
                             </div>
                             <div class="properties-listing">
@@ -172,7 +171,7 @@ include ('include/config.php');
                                 <span><?php echo $res['land_area'];?>sqft</span>
                             </div>
                         </div>
-
+                    </a>
 
                 </div>
             </div>

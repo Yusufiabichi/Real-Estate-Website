@@ -81,7 +81,7 @@
             <div class="col-xl-12">
                 <p class="copy">
                 <a href="https://yusufia-portfolio.vercel.app/" target="_blank">Developed by  Yusufia Bichi</a>
-                <a href="tel:+2347068538000">+2348108101246</a><br>
+                <a href="tel:+2347068538000">+2347068538000</a><br>
                 &copy; <?php echo date("Y");?>Cyclosis Real Estate Management Agent
                 </p>
             </div>

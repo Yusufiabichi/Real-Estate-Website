@@ -154,27 +154,26 @@ include ('include/config.php');
                         <img src="admin/images/property_image/<?php echo $res['image'];?>" alt="property-6" class="img-fluid">
                         <div class="date-box">For Sale</div>
                     </div>
-
-                    <div class="detail">
-                        <div class="heading">
-                            <h3>
-                                <a href="properties-details.php?id=<?php echo $res['id'];?>"><?php echo $res['title'];?></a>
-                            </h3>
-                            <div class="location">
-                                <a href="properties-details.php?id=<?php echo $res['id'];?>">
+                    <a href="properties-details.php?id=<?php echo $res['id'];?>">
+                        <div class="detail">
+                            <div class="heading">
+                                <h3>
+                                    <a href="properties-details.php?id=<?php echo $res['id'];?>"><?php echo $res['title'];?></a>
+                                </h3>
+                                <div class="location">
                                     <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i><?php echo $res['address'];?>                      </a>
-                                </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="properties-listing">
+                                
+                                <span><?php echo $res['hall'];?> Hall</span>
+                                <span><?php echo $res['bathroom'];?>Bathroom</span>
+                                <span><?php echo $res['land_area'];?>sqft</span>
                             </div>
                         </div>
-                        <div class="properties-listing">
-                            
-                            <span><?php echo $res['hall'];?> Hall</span>
-                            <span><?php echo $res['bathroom'];?>Bathroom</span>
-                            <span><?php echo $res['land_area'];?>sqft</span>
-                        </div>
-                    </div>
 
-                    
+
                 </div>
             </div>
             <?php }?> 

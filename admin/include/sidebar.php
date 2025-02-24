@@ -40,7 +40,7 @@ $res1=mysqli_fetch_array($query);
             <!-- Menu -->
             <div class="menu">
                 <ul class="list">
-                    <li class="header">MAIN Menu</li>
+                    <li class="header">MENU</li>
                     <li>
                         <a href="dashboard.php" class="menu-toggle">
                             <i class="material-icons"></i>

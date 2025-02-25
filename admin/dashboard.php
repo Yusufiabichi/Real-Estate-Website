@@ -1,7 +1,12 @@
 <?php include('include/header.php');
 ?>
     <!-- Header -->
-	
+	<style>
+        span {
+            color:red;
+            font-weight: bold;
+        }
+    </style>
     <section>
        
 	   <!-- Left Sidebar -->
@@ -23,27 +28,25 @@
                                  data-min-Spot-Color="rgb(255,255,255)" data-max-Spot-Color="rgb(255,255,255)" data-spot-Color="rgb(255,255,255)"
                                  data-offset="90" data-width="100%" data-height="92px" data-line-Width="2" data-line-Color="rgba(255,255,255,0.7)"
                                  data-fill-Color="rgba(0, 188, 212, 0)">
-                                Welcome to Cyclosis Real Estate Management Dashboard<br>
+                                <h4>Welcome to Cyclosis Real Estate Management Dashboard</h4><br>
                                 
 
                             </div>
                             <ul class="dashboard-stat-list">
                                <li>You can choose actions in the option menu: </li>
-                                <li>
+                                <!-- <li>
                                     Profile
+                                </li> -->
+                                <li>
+                                    Agents: <span>20</span>
                                 </li>
                                 <li>
-                                    Users
+                                    Users Message on Properties: <span>50</span>
                                 </li>
                                 <li>
-                                    Users Message on Properties 
+                                    Contact Messages: <span>20</span>
                                 </li>
-                                <li>
-                                    Contact Messages
-                                </li>
-                                <li>
-                                    Signout
-                                </li>
+                                
                             
                             </ul>
                         </div>

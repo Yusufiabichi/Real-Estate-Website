@@ -73,7 +73,7 @@ $res1=mysqli_fetch_array($query);
                     <li>
                         <a href="add_user.php" class="menu-toggle">
                             <i class="material-icons"></i>
-                            <span>Add user</span>
+                            <span>Add Agent</span>
                         </a>
                     </li>
 

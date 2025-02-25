@@ -27,7 +27,7 @@ $res1=mysqli_fetch_array($query);
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><h5> Options</h5></i>
                         <ul class="dropdown-menu pull-right">
                             <li><a href="profile.php"><i class="material-icons"></i>Profile</a></li>
-                            <li><a href="view_users.php"><i class="material-icons"></i>Users</a></li>
+                            <li><a href="view_users.php"><i class="material-icons"></i>Agents</a></li>
                             <li><a href="users_message.php"><i class="material-icons"></i>Users Message on Properties</a></li>
                             <li><a href="contact_message.php"><i class="material-icons"></i>Messages from clients</a></li>
                             <li role="separator" class="divider"></li>

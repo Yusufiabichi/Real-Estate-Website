@@ -40,7 +40,7 @@ $msg='<div class="alert alert-danger alert-dismissible">
                     <div class="card">
                         <div class="header">
                             <h2 style="text-align: center;">
-                                Add User
+                                Add Agent
                                 
                             </h2>
                         </div>

@@ -33,12 +33,15 @@
 
                             </div>
                             <ul class="dashboard-stat-list">
-                               <li>You can choose actions in the option menu: </li>
+                               <li>Data Visual Dashboard: </li>
                                 <!-- <li>
                                     Profile
                                 </li> -->
                                 <li>
                                     Agents: <span>20</span>
+                                </li>
+                                <li>
+                                    Properties: <span>28</span>
                                 </li>
                                 <li>
                                     Users Message on Properties: <span>50</span>

@@ -170,6 +170,8 @@ html {
 }
 .price {
     color: red;
+    font-weight: bold;
+    font-size: large;
 }
 .card-desc {
     font-size: 12px;

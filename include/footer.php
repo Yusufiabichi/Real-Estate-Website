@@ -70,7 +70,7 @@
                             <a href="contact.php"><i class="fa fa-angle-right"></i>Contact Us</a>
                         </li>
                         <li>
-                            <a href="admin/index.php"><i class="fa fa-angle-right"></i>Login</a>
+                            <a href="admin/index.php" target="_blank"><i class="fa fa-angle-right"></i>Login</a>
                         </li>
             
                     </ul>

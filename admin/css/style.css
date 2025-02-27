@@ -8211,3 +8211,10 @@ html.ie11 .dropdown-menu ul.menu li a {
 
 html.ie11 .bs-searchbox .form-control {
   width: 90%; }
+  #admin-dropdown::after {
+    content: "\f078";
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 300;
+    margin-left: 10px;
+  }

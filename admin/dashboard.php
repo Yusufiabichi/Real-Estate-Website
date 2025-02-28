@@ -17,6 +17,8 @@
     // Initialize counts
     $adminCount = 0;
     $inquiryCount = 0;
+    $propertiesCount = 0;
+    $propertiesContact = 0;
 
     // Get admin count
     $sql = "SELECT COUNT(*) as total FROM admin";
@@ -32,6 +34,22 @@
     if ($res->num_rows > 0) {
         $row = $res->fetch_assoc();
         $inquiryCount = $row['total'];
+    }
+
+    // Get Properties count
+    $sql = "SELECT COUNT(*) as total FROM property";
+    $res = $con->query($sql);
+    if ($res->num_rows > 0) {
+        $row = $res->fetch_assoc();
+        $propertiesCount = $row['total'];
+    }
+
+    // Get Properties Contact
+    $sql = "SELECT COUNT(*) as total FROM propertiescontact";
+    $res = $con->query($sql);
+    if ($res->num_rows > 0) {
+        $row = $res->fetch_assoc();
+        $propertiesContact = $row['total'];
     }
 
     // Close connection
@@ -62,8 +80,8 @@
                             <ul class="dashboard-stat-list">
                                 <li>Data Visual Dashboard:</li>
                                 <li>Admins: <span><?php echo $adminCount; ?></span></li>
-                                <li>Properties: <span>28</span></li>
-                                <li>Users Message on Properties: <span>50</span></li>
+                                <li>Properties: <span><?php echo $propertiesCount; ?></span></li>
+                                <li>Users Message on Properties: <span><?php echo $propertiesContact; ?></span></li>
                                 <li>Contact Messages: <span><?php echo $inquiryCount; ?></span></li>
                             </ul>
                         </div>

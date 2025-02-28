@@ -1,4 +1,5 @@
 <?php include('include/header.php');
+
 ?>
     <!-- Header -->
 	<style>
@@ -11,6 +12,22 @@
        
 	   <!-- Left Sidebar -->
 <?php include('include/sidebar.php');
+    include'include/config.php';
+
+
+
+    //SQL Query
+    $sql = "SELECT COUNT(*) as total FROM admin";
+    $res = $con->query($sql);
+
+    if ($res->num_rows > 0) {
+        $row = $res->fetch_assoc();
+        // echo "Total records: " .$row['total'];
+    } else {
+        echo "No records found";
+    }
+
+    $con->close();
 ?>
         <!-- #END# Left Sidebar --> 
     <section class="content">
@@ -38,7 +55,7 @@
                                     Profile
                                 </li> -->
                                 <li>
-                                    Agents: <span>20</span>
+                                    Admins: <span><?php echo $row['total']; ?></span>
                                 </li>
                                 <li>
                                     Properties: <span>28</span>

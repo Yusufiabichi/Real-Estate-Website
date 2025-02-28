@@ -1,15 +1,22 @@
 <?php include('include/header.php');
-$errormsg = $successmsg = " ";
+$errormsg = $successmsg = "";
 if($_SERVER["REQUEST_METHOD"] == "POST"){ 
-    require  'include/config.php';
+
+    
+    require 'include/config.php';
+    if (!$con) {
+        die("Database connection failed: " . mysqli_connect_error());
+    }
+
    // function to validate and sanitize user input  
-   function validate_input($data){
-     $data = trim($data);
-     $data = stripslashes($data);
-     $data = htmlspecialchars($data);
-     $data = filter_var($data,FILTER_SANITIZE_STRING);
-     return $data;
-   }
+   function validate_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
+        $data = filter_var($data, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+        return $data;
+    }
+
    // when contact form submitted the below code executes
           $name =  $phonenumber = $email = $subject = $message = $date =  $time  = "";
             $name =  validate_input($_POST['name']);

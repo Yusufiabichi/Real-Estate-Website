@@ -24,7 +24,9 @@ $res1=mysqli_fetch_array($query);
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $name;?></div>
                     <div class="email"><?php echo $email;?></div>
                     <div class="btn-group user-helper-dropdown">
-                        <i class="material-icons" data-toggle="dropdown" id="admin-dropdown" aria-haspopup="true" aria-expanded="true"><h5 style="color: white; !important"> Options</h5></i>
+                        <i class="material-icons" data-toggle="dropdown" id="admin-dropdown" aria-haspopup="true" aria-expanded="true">
+                            <h4 style="color: white; !important"> Options</h4>
+                        </i>
                         <ul class="dropdown-menu pull-right">
                             <li><a href="profile.php"><i class="material-icons"></i>Profile</a></li>
                             <li><a href="view_users.php"><i class="material-icons"></i>Agents</a></li>
@@ -73,7 +75,7 @@ $res1=mysqli_fetch_array($query);
                     <li>
                         <a href="add_user.php" class="menu-toggle">
                             <i class="material-icons"></i>
-                            <span>Add Agent</span>
+                            <span>Add Admin</span>
                         </a>
                     </li>
 

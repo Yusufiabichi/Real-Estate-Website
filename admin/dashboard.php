@@ -3,8 +3,10 @@
 <!-- Header -->
 <style>
     span {
-        color: red;
+        color: blue;
         font-weight: bold;
+        font-size: 15px;
+        margin-left: 5px;
     }
 </style>
 

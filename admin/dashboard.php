@@ -27,6 +27,14 @@
         echo "No records found";
     }
 
+    $sql = "SELECT COUNT(*) as total FROM inquiry";
+    $res = $con->query($sql);
+
+    if ($res->num_rows > 0) {
+        $row = $res->fetch_assoc();
+        // echo "Total records: " .$row['total'];
+    }
+
     $con->close();
 ?>
         <!-- #END# Left Sidebar --> 
@@ -64,7 +72,7 @@
                                     Users Message on Properties: <span>50</span>
                                 </li>
                                 <li>
-                                    Contact Messages: <span>20</span>
+                                    Contact Messages: <span><?php echo $row['total']; ?></span>
                                 </li>
                                 
                             

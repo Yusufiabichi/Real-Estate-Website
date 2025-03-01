@@ -181,19 +181,15 @@ include ('include/config.php');
 </div>
 <!-- Recent Properties end -->
 
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+234XXXXXXXXXX", // Your WhatsApp number
-            call_to_action: "Chat with us!", // Call to action
-            position: "left", // Position of the button
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
+<!-- Start of Glassix WhatsApp Widget -->
+<script>
+var glassixWidgetOptions = {"numbers":[{"number":"07068538000","name":"Customer Support","subtitle":"Contact us 24/7"}],"left":true,"ltr":true,"popupText":"Need help?\nChat with us on WhatsApp","title":"Chat with Cyclosis Agent","subTitle":"Click to start a conversation"};
+!function (t) { var e = function () { window.requirejs && !window.whatsAppWidgetClient && (requirejs.config({ paths: { GlassixWhatsAppWidgetClient: "https://cdn.glassix.com/clients/whatsapp.widget.1.2.min.js" } }), require(["GlassixWhatsAppWidgetClient"], function (t) { window.whatsAppWidgetClient = new t(window.glassixWidgetOptions), whatsAppWidgetClient.attach() })), window.GlassixWhatsAppWidgetClient && "function" == typeof window.GlassixWhatsAppWidgetClient ? (window.whatsAppWidgetClient = new GlassixWhatsAppWidgetClient(t), whatsAppWidgetClient.attach()) : i() }, i = function () { a.onload = e, a.src = "https://cdn.glassix.net/clients/whatsapp.widget.1.2.min.js", s && s.parentElement && s.parentElement.removeChild(s), n.parentNode.insertBefore(a, n) }, n = document.getElementsByTagName("script")[0], s = document.createElement("script"); s.async = !0, s.type = "text/javascript", s.crossorigin = "anonymous", s.id = "glassix-whatsapp-widget-script"; var a = s.cloneNode(); s.onload = e, s.src = "https://cdn.glassix.com/clients/whatsapp.widget.1.2.min.js", !document.getElementById(s.id) && document.body && (n.parentNode.insertBefore(s, n), s.onerror = i) }(glassixWidgetOptions);
 </script>
+<!-- End of Glassix WhatsApp Widget -->
+
+
+
 
 
 

@@ -149,12 +149,16 @@ include ('include/config.php');
                             $img=$res['image'];
                    ?>
             <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
+
+            <a href="properties-details.php?id=<?php echo $res['id'];?>">
                 <div class="property-box-8">
                     <div class="property-photo">
-                        <img src="admin/images/property_image/<?php echo $res['image'];?>" alt="property-6" class="img-fluid">
-                        <div class="date-box">For Sale</div>
+
+                        <a href="properties-details.php?id=<?php echo $res['id'];?>">
+                            <img src="admin/images/property_image/<?php echo $res['image'];?>" alt="property-6" class="img-fluid">
+                            <div class="date-box">For Sale</div>
+                        </a>
                     </div>
-                    <a href="properties-details.php?id=<?php echo $res['id'];?>">
                         <div class="detail">
                             <div class="heading">
                                 <h3>
@@ -171,9 +175,8 @@ include ('include/config.php');
                                 <span><?php echo $res['land_area'];?>sqft</span>
                             </div>
                         </div>
-                    </a>
-
                 </div>
+            </a>
             </div>
             <?php }?> 
         </div>

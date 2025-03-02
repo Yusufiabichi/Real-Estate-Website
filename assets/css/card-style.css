@@ -111,6 +111,7 @@ html {
 @media (max-width: 991px) {
     .articles{
         margin-top: 15px;
+        max-width: 1300px;
     }
 }
 

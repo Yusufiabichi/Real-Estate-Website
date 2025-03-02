@@ -58,11 +58,15 @@
     $con->close();
     ?>
     <!-- #END# Left Sidebar -->
-
+    <style>
+        .block-header h1 {
+            font-size: 20px;
+        }
+    </style>
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>DASHBOARD</h2>
+                <h1> ADMIN DASHBOARD</h1>
             </div>
 
             <div class="row clearfix">

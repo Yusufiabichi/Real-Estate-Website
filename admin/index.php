@@ -37,15 +37,41 @@ $err="Pls Enter Valid Email or Password";
   <link href="assets/css/sb-admin.css" rel="stylesheet">
 
   
-  
+  <style>
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 35px;
+    }
+    .logo img{
+      width: 150px;
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .header h2{
+      color: white;
+      text-align: center;
+    }
+    .card-header {
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body class="bg-dark">
 
- 
+ <div class="logo">
+  <img src="assets/img/logo.png" alt="cyclosis logo">
+ </div>
+ <div class="header"><h2>Cyclosis Real Estate Management <br> Admin Panel</h2></div>
   <div class="container">
     <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Login</div>
+      <div class="card-header"><h3>Login</h3></div>
       <div class="card-body">
         <form method="post" enctype="multipart/form-data">
           <?php 

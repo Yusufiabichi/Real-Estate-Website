@@ -1,14 +1,7 @@
 <?php include('include/header.php'); ?>
 
 <!-- Header -->
-<style>
-    span {
-        color: blue;
-        font-weight: bold;
-        font-size: 15px;
-        margin-left: 5px;
-    }
-</style>
+
 
 <section>
     <!-- Left Sidebar -->
@@ -66,13 +59,13 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h1> ADMIN DASHBOARD</h1>
+                <!-- <h1> ADMIN DASHBOARD</h1> -->
             </div>
 
             <div class="row clearfix">
                 <!-- Visitors -->
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="body">
                             <div class="sparkline" data-type="line" data-spot-Radius="4" 
                                  data-highlight-Spot-Color="rgb(233, 30, 99)" 
@@ -91,7 +84,7 @@
                                 <li>Contact Messages: <span><?php echo $inquiryCount; ?></span></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="dashboard-card">
                         <h2>Admin Dashboard</h2>
@@ -141,3 +134,7 @@
     </section>
 
 <?php include('include/footer.php'); ?>
+
+
+
+

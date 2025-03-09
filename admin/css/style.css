@@ -2840,7 +2840,7 @@ section.content {
 }
 .stat {
   background: #007bff;
-  color: #fff;
+  color: #fff !important;
   padding: 15px;
   border-radius: 8px;
   display: flex;

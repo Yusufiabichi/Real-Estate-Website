@@ -92,6 +92,48 @@
                             </ul>
                         </div>
                     </div>
+
+                    <div class="dashboard-card">
+                        <h2>Admin Dashboard</h2>
+                        <div class="stats">
+                            <div class="stat">
+                                <i class="fa fa-user-shield"></i>
+                                <span id="totalAdmins">0</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fa fa-globe"></i>
+                                <span id="totalAdmins">Website visits 0</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fa fa-users"></i>
+                                <span id="totalUsers">0</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fa fa-building"></i>
+                                <span id="totalProperties">0</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fa fa-envelope"></i>
+                                <span id="totalMessages">0</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const data = {
+                                totalAdmins: 5,
+                                totalUsers: 1500,
+                                totalProperties: 230,
+                                totalMessages: 420
+                            };
+                            
+                            document.getElementById("totalAdmins").innerText = `Admins ${data.totalAdmins} `;
+                            document.getElementById("totalUsers").innerText = `Users ${data.totalUsers}`;
+                            document.getElementById("totalProperties").innerText = `Properties ${data.totalProperties}`;
+                            document.getElementById("totalMessages").innerText = `Messages ${data.totalMessages}`;
+                        });
+                    </script>
                 </div>
                 <!-- #END# Visitors -->
             </div>

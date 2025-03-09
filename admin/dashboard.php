@@ -2,6 +2,28 @@
 
 <!-- Header -->
 
+<?php
+// Define the file path
+$counter_file = "counter.txt";
+
+// Check if the file exists, otherwise create it with an initial count of 0
+if (!file_exists($counter_file)) {
+    file_put_contents($counter_file, "0");
+}
+
+// Read the current visit count
+$visits = (int) file_get_contents($counter_file);
+
+// Increment the count
+$visits++;
+
+// Save the updated count back to the file
+file_put_contents($counter_file, $visits);
+
+// Display the total number of visits
+echo "Total Website Visits: " . $visits;
+?>
+
 
 <section>
     <!-- Left Sidebar -->

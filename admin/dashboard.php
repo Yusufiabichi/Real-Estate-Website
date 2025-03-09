@@ -73,11 +73,7 @@ echo "Total Website Visits: " . $visits;
     $con->close();
     ?>
     <!-- #END# Left Sidebar -->
-    <style>
-        .block-header h1 {
-            font-size: 20px;
-        }
-    </style>
+
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
@@ -113,23 +109,25 @@ echo "Total Website Visits: " . $visits;
                         <div class="stats">
                             <div class="stat">
                                 <i class="fa fa-user-shield"></i>
-                                <span id="totalAdmins">0</span>
+                                <span id="totalAdmins">Admins: <?php echo $adminCount?></span>
                             </div>
                             <div class="stat">
                                 <i class="fa fa-globe"></i>
-                                <span id="totalAdmins">Website visits 0</span>
+                                <span id="totalAdmins">Website visits: <?php echo $visits ?></span>
                             </div>
                             <div class="stat">
                                 <i class="fa fa-users"></i>
-                                <span id="totalUsers">0</span>
+                                <span id="totalUsers">Total Users: <?php echo $inquiryCount ?></span>
                             </div>
                             <div class="stat">
                                 <i class="fa fa-building"></i>
-                                <span id="totalProperties">0</span>
+                                <span id="totalProperties">Properties: <?php echo $propertiesCount ?></span>
                             </div>
                             <div class="stat">
                                 <i class="fa fa-envelope"></i>
-                                <span id="totalMessages">0</span>
+                                <span id="totalMessages">Properties: <?php echo $inquiryCount ?></span>
+                                $propertiesCount = 0;
+    $propertiesContact = 0;
                             </div>
                         </div>
                     </div>
@@ -137,7 +135,7 @@ echo "Total Website Visits: " . $visits;
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
                             const data = {
-                                totalAdmins: 5,
+                                totalAdmins: $adminCount,
                                 totalUsers: 1500,
                                 totalProperties: 230,
                                 totalMessages: 420

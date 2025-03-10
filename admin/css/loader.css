@@ -1,1 +1,47 @@
-C:\wamp64\www\Real-Estate-Website\admin\include\loader.php
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #000; */
+}
+.loader-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #242f3f;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+.loader-inner img {
+    background-color: blue;
+    width: 120px;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+}

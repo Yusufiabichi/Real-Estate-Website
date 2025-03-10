@@ -9,8 +9,17 @@
 <body>
     <div class="loader-wrapper">
         <span class="loader">
-            <div class="loader-inner">Loader</div>
+            <span class="loader-inner">
+                <!-- <img src="../assets/img/logo.png" alt=""> -->
+            </span>
         </span>
     </div>
+
+
+    <script>
+        $(window).on("load", function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 </body>
 </html>

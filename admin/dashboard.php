@@ -2,6 +2,10 @@
 
 <!-- Header -->
 
+
+<!-- Loader -->
+ <?php include('include/loader.php'); ?>
+
 <?php
 // Define the file path
 $counter_file = "counter.txt";

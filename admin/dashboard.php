@@ -77,7 +77,7 @@ echo "Total Website Visits: " . $visits;
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <!-- <h1> ADMIN DASHBOARD</h1> -->
+                <h1 style="font-size: 25px;"> CYCLOSIS ADMIN MANAGEMENT DASHBOARD</h1>
             </div>
 
             <div class="row clearfix">
@@ -126,8 +126,6 @@ echo "Total Website Visits: " . $visits;
                             <div class="stat">
                                 <i class="fa fa-envelope"></i>
                                 <span id="totalMessages">Properties: <?php echo $inquiryCount ?></span>
-                                $propertiesCount = 0;
-    $propertiesContact = 0;
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 
 <?php include('include/header.php');
 include ('include/config.php');
-// include ('include/whatsapp.php')
+include ('include/loader.php');
 ?>
 <!-- main header end -->
 
@@ -198,3 +198,6 @@ var glassixWidgetOptions = {"numbers":[{"number":"07068538000","name":"Customer 
 
 <!-- Footer start -->
 <?php include('include/footer.php');?>
+
+
+<!-- Developed by Yusufia bichi -->

@@ -69,7 +69,7 @@ echo"<script>window.location.href='view_property.php';</script>";
                     <div class="card">
                         <div class="header">
                             <h2 style="text-align: center;">
-                                Add Property
+                                Update Property
                                 
                             </h2>
                         <div class="body">
@@ -245,7 +245,7 @@ echo"<script>window.location.href='view_property.php';</script>";
                                     <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
                              
                                      
-                                        <input type="submit" name="submit" class="btn btn-primary btn-lg m-l-15 waves-effect" value="Submit">
+                                        <input type="submit" name="submit" class="btn btn-primary btn-lg m-l-15 waves-effect" value="Update">
                                     </div>
                                 </div>
                             </form>
